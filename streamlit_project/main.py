@@ -1,5 +1,5 @@
 import streamlit as st
-from scrape import scrape_website
+from functions.retreiver import retreiver
 
 def main():
     st.title('Web Scraper App')
@@ -11,7 +11,7 @@ def main():
     if st.button("Scrape"):
         if url:
             # Call scrape_website function from scrape.py
-            result = scrape_website(url)
+            result = retreiver(url)
             
             # Display the scraped text content
             st.subheader("Scraped Text:")
