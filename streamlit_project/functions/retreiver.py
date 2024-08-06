@@ -1,6 +1,6 @@
 from langchain_chroma import Chroma
 from langchain_community.document_loaders import WebBaseLoader
-frm
+
 from langchain_community.embeddings.sentence_transformer import (
     SentenceTransformerEmbeddings,
 )
